@@ -19,7 +19,7 @@ module.exports = function ( grunt ) {
 			earlyExit: grunt.option( 'earlyexit' ),
 			novisuals: grunt.option( 'novisuals' ),
 			hideElements: this.data.hideElements || [],
-			casperArgs: this.data.casperArgs || []
+			casperArgs: grunt.option( 'casperArgs' )
 		} );
 
 		var done = this.async();
